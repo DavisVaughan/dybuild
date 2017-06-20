@@ -1,0 +1,29 @@
+/* ------- HEADER ------- */
+
+/* logo */
+.skin-blue .main-header .logo {
+  background-color: #1289cc;
+}
+
+/* logo when hovered (so it doesnt change back to blue) */
+.skin-blue .main-header .logo:hover {
+  background-color: #1289cc;
+}
+
+/* navbar (rest of the header) */
+.skin-blue .main-header .navbar {
+  background-color: #1289cc;
+} 
+
+/* ------- SLIDER ------- */
+
+.irs-single, .irs-bar-edge, .irs-bar {
+  background: #1289cc; 
+  border: #1289cc
+}
+
+/* ------- VALUE BOX ------- */
+
+.small-box .inner {
+  background-color: #41aeab
+}
