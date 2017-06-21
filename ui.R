@@ -2,7 +2,7 @@
 shinyUI(dashboardPage(
   
   # HEADER ----------------------------------------------------------
-  dashboardHeader(title = "Interactively build a financial dygraph"),
+  dashboardHeader(title = "Chart Builder"),
   
   # SIDEBAR ---------------------------------------------------------
   dashboardSidebar(disable = TRUE),
@@ -21,7 +21,7 @@ shinyUI(dashboardPage(
       # Column 1 ----------------------------------------------------
       box(
         title = "Technical Trading Rules",
-        width = 6,
+        width = 9,
         
         # Chart output
         exampleDygraphOutputUI("chart", .height = 400)
@@ -31,7 +31,7 @@ shinyUI(dashboardPage(
       # Column 2 ----------------------------------------------------
       box(
         title = "Options",
-        width = 6,
+        width = 3,
         
         selectizeInput("stock", 
                    label = "Stock Selection", 
@@ -39,7 +39,7 @@ shinyUI(dashboardPage(
                    multiple = TRUE),
         
         selectInput("TTR_options", label = "TTR Options", 
-                    choices = tq_mutate_fun_options()$TTR, multiple = TRUE),
+                    choices = TTR_functions(), multiple = TRUE),
         
         selectInput("cols", label = "Column Selection", multiple = TRUE, choices = NULL)
       )

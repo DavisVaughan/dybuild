@@ -34,7 +34,8 @@ renderDynamicDygraph <- function(input, output, session, .data, op, cols) {
     }
     
     dygraph(chart_data) %>%
-      dyOptions(connectSeparatedPoints=TRUE)
+      dyLegend(width = 600) %>%
+      dyRangeSelector()
   })
   
 }

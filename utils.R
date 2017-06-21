@@ -76,3 +76,32 @@ stock_selection <- function() {
                     tq_index(., use_fallback = TRUE))) %>%
     filter(!duplicated(symbol))
 }
+
+# List the TTR functions available for graphing
+#
+# Description:
+# A function that returns mtcars as a reactive
+#
+# Params:
+#
+# Returns:
+# mtcars
+#
+TTR_functions <- function() {
+  c("ALMA",
+    "BBands",
+    "DEMA",
+    "DonchianChannel",
+    "EMA",
+    "HMA",
+    "PBands",
+    "runMax",
+    "runMean",
+    "runMedian",
+    "runMin",
+    "SMA",
+    "WMA",
+    "ZigZag",
+    "ZLEMA"
+  )
+}
